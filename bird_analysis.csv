@@ -1,0 +1,4 @@
+﻿image_name,predicted_species,confidence,analysis_date
+bird04.jpg,OSTRICH,1.0,2026-10-23 14:56:53
+bird15.jpg,PEREGRINE FALCON,1.0,2026-10-23 14:57:06
+bird04.jpg,OSTRICH,1.0,2026-10-23 14:57:32

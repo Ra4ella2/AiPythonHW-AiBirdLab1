@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-color: #171717;
+    color: white;
+    font-family: Arial;
+}
+
+.main {
+    width: 800px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.block {
+    background-color: #242424;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #e95d2a;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input {
+    padding: 9px;
+    margin: 5px;
+}
+
+.search {
+    margin-top: 15px;
+}
+
+.historyItem {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.stats {
+    margin-top: 15px;
+}
