@@ -13,7 +13,7 @@ from fastapi import (
 
 from fastapi.middleware.cors import CORSMiddleware
 
-AI_SERVER_URL = "http://127.0.0.1:8001/predict"
+AI_SERVER_URL = "http://ai_server:8001/predict"
 DATABASE = "birds.db"
 CSV_FILE = "bird_analysis.csv"
 
@@ -405,3 +405,4 @@ def export_csv():
     }
 
 #uvicorn backend:app --port 8000
+#uvicorn backend:app --host 0.0.0.0 --port 8000

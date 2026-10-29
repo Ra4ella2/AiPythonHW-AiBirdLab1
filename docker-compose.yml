@@ -1,0 +1,26 @@
+services:
+
+  ai_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.ai
+
+    ports:
+      - "8001:8001"
+
+    environment:
+      - HF_HOME=/root/.cache/huggingface
+
+    volumes:
+      - E:/HuggingFace:/root/.cache/huggingface
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - ai_server
+    volumes:
+      - ./birds.db:/app/birds.db
